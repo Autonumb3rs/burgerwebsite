@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers Friends Fries</title>
+    <link rel="icon" type="image/png" href="pictures/burger_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--------Navigation-buttons-------->
+    <nav id="navigation"> 
+        <div class="logo">Burger Friends Fries</div>
+        <ul>
+            <li><a onclick="home()">Home</a></li>
+            <li><a onclick="about()">About</a></li>
+            <li><a onclick="menu()">Menu</a></li>
+            <li><a onclick="contact()">Contacts</a></li>
+            <li><a class="Ordering" onclick="order()">Order Now</a></li>
+        </ul>
+    </nav>
+<!--------Menu-------->
+    <div id="menu">
+        <h1 class="sub-title">Menu List</h1>
+        <div class="container">
+            <p class="food-class">Burgers</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/burgers/regular-burger.png">
+                    <div class="layer">
+                        <h3>Regular Burger</h3>
+                        <p>A simple yet satisfying combination of tender pork patty and melted cheese nestled between soft buns, delivering a comforting classic taste.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/burgers/beef-burger.png">
+                    <div class="layer">
+                        <h3>Beef Burger</h3>
+                        <p>A hearty feast featuring double beef patties, topped with fresh onions, tomatoes, crisp lettuce, and oozing melted cheese, all sandwiched between fluffy buns for an indulgent bite. </p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/burgers/bbq-burger.png">
+                    <div class="layer">
+                        <h3>BBQ Burger</h3>
+                        <p>Indulge in the smoky flavors of grilled pork and beef patties embraced by toasted buns, crowned with a generous layer of melted cheese, creating a mouthwatering harmony of barbecue goodness.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/burgers/deluxe-burger.jpg">
+                    <div class="layer">
+                        <h3>Deluxe Burger</h3>
+                        <p>Elevate your burger experience with a symphony of flavors, boasting crisp lettuce, tangy onions, juicy tomatoes, and a tantalizing blend of special sauce, mustard, and ketchup, all complemented by zesty pickles, nestled within soft buns for a deluxe treat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="food-class">Fries</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/fries/Classic-fries.jpg">
+                    <div class="layer">
+                        <h3>Classic Fries</h3>
+                        <p>Crispy golden fries made from regular potatoes, offering a timeless sidekick to your meal, perfect for dipping or enjoying on their own.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/fries/garlic-fries.jpg">
+                    <div class="layer">
+                        <h3>Garlic Fries</h3>
+                        <p>Elevate your fry game with a savory twist of garlic flavor, enhancing the crispy texture of golden fries for a delightful burst of taste in every bite.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/fries/kamote-fries.jpg">
+                    <div class="layer">
+                        <h3>Kamote Fries</h3>
+                        <p>Embark on a unique culinary journey with fries crafted from sweet potatoes, offering a subtly sweet and satisfying alternative to traditional fries, perfect for those seeking a wholesome snack.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/fries/deluxe-fries.png">
+                    <div class="layer">
+                        <h3>Deluxe Fries</h3>
+                        <p>Experience the ultimate fry sensation with a tantalizing medley of regular, garlic, and sweet potato fries, generously topped with savory ground beef, creating a mouthwatering fusion of flavors and textures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="food-class">Drinks</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/drinks/soft-drinks.png">
+                    <div class="layer">
+                        <h3>Soda</h3>
+                        <p>Quench your thirst with a refreshing carbonated beverage, available in various flavors to complement your meal and tantalize your taste buds.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/iced-tea.png">
+                    <div class="layer">
+                        <h3>Iced Tea</h3>
+                        <p>Savor the crisp and cool essence of freshly brewed iced tea, offering a soothing refreshment to accompany your dining experience, perfect for those seeking a lighter option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/smoothie.png">
+                    <div class="layer">
+                        <h3>Smoothie</h3>
+                        <p>Indulge in a fruity delight with our signature smoothies, crafted from a blend of fresh fruits and creamy goodness, offering a nourishing and energizing beverage option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/beer.png">
+                    <div class="layer">
+                        <h3>Beer</h3>
+                        <p>Unwind and relax with a cold and crisp beer selection, offering a perfect pairing to your burger and fries, allowing you to kick back and enjoy the moment with a refreshing sip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="food-class">Salad</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/drinks/soft-drinks.png">
+                    <div class="layer">
+                        <h3>Soda</h3>
+                        <p>Quench your thirst with a refreshing carbonated beverage, available in various flavors to complement your meal and tantalize your taste buds.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/iced-tea.png">
+                    <div class="layer">
+                        <h3>Iced Tea</h3>
+                        <p>Savor the crisp and cool essence of freshly brewed iced tea, offering a soothing refreshment to accompany your dining experience, perfect for those seeking a lighter option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/smoothie.png">
+                    <div class="layer">
+                        <h3>Smoothie</h3>
+                        <p>Indulge in a fruity delight with our signature smoothies, crafted from a blend of fresh fruits and creamy goodness, offering a nourishing and energizing beverage option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/beer.png">
+                    <div class="layer">
+                        <h3>Beer</h3>
+                        <p>Unwind and relax with a cold and crisp beer selection, offering a perfect pairing to your burger and fries, allowing you to kick back and enjoy the moment with a refreshing sip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="food-class">Wings</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/drinks/soft-drinks.png">
+                    <div class="layer">
+                        <h3>Soda</h3>
+                        <p>Quench your thirst with a refreshing carbonated beverage, available in various flavors to complement your meal and tantalize your taste buds.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/iced-tea.png">
+                    <div class="layer">
+                        <h3>Iced Tea</h3>
+                        <p>Savor the crisp and cool essence of freshly brewed iced tea, offering a soothing refreshment to accompany your dining experience, perfect for those seeking a lighter option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/smoothie.png">
+                    <div class="layer">
+                        <h3>Smoothie</h3>
+                        <p>Indulge in a fruity delight with our signature smoothies, crafted from a blend of fresh fruits and creamy goodness, offering a nourishing and energizing beverage option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/beer.png">
+                    <div class="layer">
+                        <h3>Beer</h3>
+                        <p>Unwind and relax with a cold and crisp beer selection, offering a perfect pairing to your burger and fries, allowing you to kick back and enjoy the moment with a refreshing sip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="food-class">Dessert</p>
+            <div class="menu-list">
+                <div class="food">
+                    <img src="pictures/drinks/soft-drinks.png">
+                    <div class="layer">
+                        <h3>Soda</h3>
+                        <p>Quench your thirst with a refreshing carbonated beverage, available in various flavors to complement your meal and tantalize your taste buds.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/iced-tea.png">
+                    <div class="layer">
+                        <h3>Iced Tea</h3>
+                        <p>Savor the crisp and cool essence of freshly brewed iced tea, offering a soothing refreshment to accompany your dining experience, perfect for those seeking a lighter option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/smoothie.png">
+                    <div class="layer">
+                        <h3>Smoothie</h3>
+                        <p>Indulge in a fruity delight with our signature smoothies, crafted from a blend of fresh fruits and creamy goodness, offering a nourishing and energizing beverage option.</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="pictures/drinks/beer.png">
+                    <div class="layer">
+                        <h3>Beer</h3>
+                        <p>Unwind and relax with a cold and crisp beer selection, offering a perfect pairing to your burger and fries, allowing you to kick back and enjoy the moment with a refreshing sip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

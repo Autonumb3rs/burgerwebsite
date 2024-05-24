@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers Friends Fries</title>
+    <link rel="icon" type="image/png" href="pictures/burger_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<!--------HOME-------->
+    <div id="home">
+        <div id="header">
+            <div class="container">
+                <nav id="navigation"> 
+                    <div class="logo">Burger Friends Fries</div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a onclick="about()">About</a></li>
+                        <li><a onclick="menu()">Menu</a></li>
+                        <li><a onclick="contact()">Contacts</a></li>
+                        <li><a class="Ordering" onclick="order()">Order Now</a></li>
+                    </ul>
+                </nav>
+                <section id="hero_burger">
+                    <div class="section_pic-container"  >
+                        <img src="burgerfriesdrink.png" class="hero-picture">
+                    </div>
+                    <div class="section_text">
+                        <p class="section_text_p">Welcome to</p>
+                        <h1 class="title">BFF-RESTO</h1>
+                        <p class="section_text_p">burgers, fries, drinks, and more...</p>
+                        <div class="button-container">  
+                            <button class="button btn-color-2" onclick="menu()">Menu List</button>
+                            <button class="button btn-color-1" onclick="order()">Order Now</button>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!--------Divider------->
+    <div class="divider">
+        <p>BURGER FRIENDS FRIES RESTO</p>
+    </div>
+<!--------Home-About-------->
+    <div id="home-about">
+        <h1 class="sub-title">Welcome to BFF-Resto, Home of Burgers</h1>
+        <p class="subsub-title">hungry? craving? have a bite!</p>
+        <div id="about_container">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="pictures/burger_ad.mp4" type="video/mp4">
+            </video>
+            <p>
+                Welcome to Burgers Friends Fries, where every meal is a celebration of friendship and flavor!</p>
+        </div>
+    </div>
+<!--------Divider------->
+    <div class="divider">
+        <p>BURGER FRIENDS FRIES RESTO</p>
+    </div>
+</body>
+<!--------Footer-------->
+<footer>
+    <div id="contacts">
+        <div class="footer">
+            <h2>Follow Us!</h2>
+            <p>
+                Located in the Texas Panhandle, this city is known for its oil and gas production. It was founded in 1926 and quickly became a boomtown. Today, it is home to the world's largest inland petrochemical complexes, with companies like Chevron-Phillips Chemical, Solvay, and Phillips 66 having a presence there. Borger also has a community college, Frank Phillips College, and a museum, the Hutchinson County Museum. Borger, Texas.
+            </p>
+        </div>
+    </div>
+</footer>
+</html>

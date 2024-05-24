@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Noto+Music&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+  
+body {
+    background-image: url(/pictures/wallpaper.png);
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+/*Form*/
+
+.picture {
+    padding-top: 30px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.picture img {
+    display: flex;
+    height: 400px;
+    width: auto;
+}
+
+.Name-tag {
+    margin-top: 55px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.tag2 {
+    display: flex;
+    font-size: 100px;
+    font-weight: 750;
+    font-family: normal;
+    text-align: left;
+    margin: -8px -8px;
+    padding: 10px;
+}
+
+.tag1,
+.tag3 {
+    text-align: left;
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.form-wrapper {
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fdcc03;
+}
+
+.form-wrapper h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-wrapper .notif-message {
+    border: 2px #000 solid;
+    background-color: #fff;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-wrapper p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.form-wrapper input[type="button"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f71f20;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-wrapper input[type="button"]:hover { 
+    background-color: #6b4319;
+}
+

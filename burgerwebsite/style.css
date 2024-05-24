@@ -1,0 +1,384 @@
+/*Home*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#home {
+    background-image: url(/pictures/wallpaper.png);
+    max-height: 100vh;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #502314;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+    padding: 10px 10%;
+}   
+
+#navigation {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a:hover:not(.Ordering) {
+    color: #a9411e;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #f3ad61;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+nav ul li a::after {
+    top: -6px;
+    bottom: auto;
+}
+
+nav ul li a:hover:not(.Ordering)::before,
+nav ul li a:hover:not(.Ordering)::after {
+    width: 100%;
+}
+
+.Ordering {
+    border: 10px solid #f71f20;
+    background-color: #f71f20;
+    height: 10px;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.Ordering:hover {
+    background: #fdcc03;
+    border-color: #fdcc03;
+    color: #000;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+section {
+    padding-top: 32px;
+    margin: 0 160px;
+    box-sizing: border-box;
+    min-height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container {
+    display: flex;
+}
+
+#hero_burger {
+    display: flex;
+    height: 400px;
+    width: auto;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 600px;
+    width: 600px;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text_p {
+    font-weight: bold;
+    text-align: left;
+    font-size: 35px;
+    color: #000;
+    margin-left: 5px;
+}
+
+.title {
+    font-size: 100px;
+    text-align: left;
+    color: #000;
+    font-family: normal;
+    font-weight: 800;
+}
+
+.button-container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: #353535 10px solid;
+    font-weight: 900;
+    transition: all 300ms ease;
+    padding: 16px;
+    width: 200px;
+    border-radius: 32px;
+    border: 50px;
+    font-size: 18px;
+}
+
+.btn-color-2:hover {
+    cursor: pointer;
+    background: #fdcb03e0;
+    color: #000000;
+}   
+
+.btn-color-1:hover {
+    cursor: pointer;
+    background: #f71f20;
+    color: #ffffff;
+}   
+
+.btn-color-2 {
+    background: white;
+}
+
+.button-container {
+    gap: 16px;
+}
+
+/*Divider*/
+.divider {
+    background-color: #f3ad61;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*About-us*/
+#home-about {
+    background-color: #c41919;
+    align-items: center;
+    text-align: center;
+}
+
+#home-about h1 {
+    padding: 70px;
+    font-size: 50px;
+    font-family: normal;
+}
+
+.subsub-title {
+    color: #fff;
+    margin-top: -22vh;
+    margin-bottom: -12vh;
+}
+
+.back-video {
+    display: flex;
+    margin: auto;
+    margin-bottom: -12vh;
+    width: auto;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+#home-about p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 150px;
+}
+
+#home-about_container {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#home-about_container p {
+    margin-top: -50px;
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    background-color: #71911f;
+    color: #fff;
+}
+
+.footer h2 {
+    text-align: center;
+    font-weight:900;
+    font-size: 50px;
+    margin-bottom: -15px;
+}
+
+.footer p {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+/*Menu*/
+#menu {
+    padding: 70px 0;
+    background-color:#502314;
+}
+
+.sub-title {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 600px;
+    text-align: center;
+}
+
+.food-class {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+.food {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    width: 360px;
+    margin-inline: 10px;
+}
+
+.food img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.food p {
+    color: #fff;
+}
+
+.layer {
+    height: 20%;
+    background: #fdcc03;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 0 40px;
+    font-size: 20px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.food:hover .layer {
+    background: linear-gradient(#000000ad, #fdcc03);
+    border-radius: 10px;
+    justify-content: center;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.layer a {
+    color: #000;
+    
+    font-weight: 900;   
+    font-size: x-large;
+}

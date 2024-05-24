@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF Login</title>
+    <link rel="icon" type="image/png" href="pictures/burger_icon.png">
+    <link rel="stylesheet" href="sstyle.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/793cfa2b19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="picture">
+            <img src="burgerfriesdrink.png" class="hero-picture">
+        </div>
+        <div class="Name-tag">
+            <p class="tag1">Welcome to</p>
+            <h1 class="tag2">BFF-RESTO</h1>
+            <p class="tag3">burger, fries, drinks, and more...</p>
+        </div>
+    </div>
+    <div class="form-wrapper">
+        <h2>Log into BFF-RESTO</h2>
+        <div class="notif-message">
+            <p>You must log in to continue</p>
+        </div>
+        <div class="form-control">
+            <label>Email or Username</label>
+            <input id="email" type="text" required></input>
+        </div>
+        <div class="form-control">
+            <label>Password</label>
+            <input id="pass" type="password" required></input>
+        </div>
+        <input type="button" onclick="login()" value="Sign-In"></input>
+    </div>
+</body>
+</html>
